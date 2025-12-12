@@ -1,4 +1,4 @@
-# Network-Test-MacOS-zsh
+# Network-Test-MacOS.sh
 MacOS zsh script that allows users to choose specific network tests (ping multiple IPs, get current IP, scan current network, a network quality test, TCP dump, and check open TCP ports). 
 
 In more detail, this script is a series of functions that will perform the following:
