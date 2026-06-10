@@ -5,7 +5,7 @@ To run, open terminal and go the directory (i.e. Folder) where the script is loc
 
 ## Functions Used
 
-* **menu()**: a while True loop, displaying options and reading user input. After each option is selected, the script will continually loop until the user explcity chooses to exit (7).
+* **menu()**: a While-True loop, displaying options and reading user input. After each option is selected, the script will continually loop until the user explcity chooses to exit (7).
 * **ping_IP()**: check if at least one IP was entered. If that is met, it will loop through the IPs and ping them. Made sure to limit it to 4 pings.
 * **get_IP()**: extracting ip addr and filtering the loopback address. Then, it will pull public IP via DNS lookup (not using curl/wget).
 * **scan_Network()**: obtains IP address from interface en0 (Wi-Fi) or en1 (Ethernet), extracts first 3 octets to get our subnet. Then, it will loop through all possible host address (1-254) and send one ping packet to each IP. It has a maximum wait time of 5 seconds. All pings will be run in parallel (the & at the end). This is limited since it assumes /24 subnet, only finds devices that repsond to ping, and is MacOS specific.
